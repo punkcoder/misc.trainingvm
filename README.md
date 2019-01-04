@@ -17,7 +17,7 @@ designed to be functional with 1 core and 2gb of ram.
 ## Usage
 
 1. Install Ubuntu 18.10 Server selecting no additional item.
-1. Clone the respository or ssh the files to the machine
+1. Clone the repository or ssh the files to the machine
 1. Run: `sudo ./install.sh`
 1. Reboot
 
