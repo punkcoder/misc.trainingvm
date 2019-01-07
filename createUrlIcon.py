@@ -15,10 +15,10 @@ for i in range(0,len(sys.argv)):
     if sys.argv[i] == "--ico":
         appico = sys.argv[i+1]
 
-if not os.path.isdir("Desktop"):
-    os.mkdir("Desktop")
+if not os.path.isdir("~/Desktop"):
+    os.mkdir("~/Desktop")
 
-filename = "Desktop/{appname}.desktop".format(appname=appname)
+filename = "~/Desktop/{appname}.desktop".format(appname=appname)
 
 f = open(filename,'w')
 f.write("[Desktop Entry]\n")
