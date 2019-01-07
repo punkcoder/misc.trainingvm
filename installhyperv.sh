@@ -5,4 +5,4 @@ if [ "$EUID" -ne 0 ]
   exit
 fi
 
-apt install xserver-xorg-video-fbdev linux-azure
+apt install xserver-xorg-video-fbdev linux-azure -y
