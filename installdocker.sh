@@ -5,6 +5,10 @@ if [ "$EUID" -ne 0 ]
   exit
 fi
 
+# adduser jmckee
+# apt install git sudo 
+# usermod -aG sudo jmckee
+
 apt update
 apt upgrade -y
-apt-get install -y software-properties-common sudo git
+apt-get install -y software-properties-common sudo git wget
