@@ -18,10 +18,10 @@ for i in range(0,len(sys.argv)):
     if sys.argv[i] == "--term":
         appterm = True
 
-if not os.path.isdir("~/Desktop"):
-    os.mkdir("~/Desktop")
+if not os.path.isdir("/home/jmckee/Desktop"):
+    os.mkdir("/home/jmckee/Desktop")
 
-filename = "~/Desktop/{appname}.desktop".format(appname=appname)
+filename = "/home/jmckee/Desktop/{appname}.desktop".format(appname=appname)
 
 f = open(filename,'w')
 f.write("[Desktop Entry]\n")
