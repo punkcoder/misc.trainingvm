@@ -11,4 +11,5 @@ fi
 
 apt update
 apt upgrade -y
-apt-get install -y software-properties-common sudo git wget
+apt-get install -y software-properties-common sudo git wget python python3
+

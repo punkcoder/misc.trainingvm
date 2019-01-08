@@ -30,18 +30,22 @@ else
     echo "xfce4-session" > /home/training/.xsession    
 fi
 
-sh ./installdvwa.sh
-sh ./installzap.sh
-sh ./installtools.sh
-sh ./installbwapp.sh
 
 # Completing
 sudo systemctl enable xrdp
 sudo systemctl start xrdp
+sudo /etc/init.d/xrdp start
 sudo systemctl enable apache2
 sudo systemctl start apache2
+sudo /etc/init.d/apache2 start
 sudo systemctl enable mysql
 sudo systemctl start mysql
+sudo /etc/init.d/xrdp mysql
+
+sh ./installdvwa.sh
+sh ./installzap.sh
+sh ./installtools.sh
+sh ./installbwapp.sh
 
 mkdir /home/training/Desktop
 cd /home/training/Desktop/
