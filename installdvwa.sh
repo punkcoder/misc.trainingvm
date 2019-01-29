@@ -19,5 +19,8 @@ chmod 777 /var/www/html/dvwa/config/
 mysql -u root -e "CREATE DATABASE dvwa;"
 mysql -u root -e "grant all on dvwa.* to dvwa@localhost identified by 'p@ssw0rd';"
 
+# Need to check this against the install
+curl 'http://localhost/dvwa/setup.php#' --data 'create_db=Create+%2F+Reset+Database'
+
 cd ~
 ~/createUrlIcon.py --name DVWA --url http://localhost/dvwa
