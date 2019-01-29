@@ -3,6 +3,8 @@
 import sys
 import os
 
+
+# Additional resolutions.
 resolutions = [ '1280x720', '1920x1080' ]
 
 count = 1
